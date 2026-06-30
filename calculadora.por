@@ -19,5 +19,30 @@ programa {
     escreva("\nEscolha uma opcao: ")
     leia(opcao)
 
+  se (opcao == 1) {
+      resultado = num1 + num2
+      escreva("\nResultado: ", resultado)
+    }
+    senao se (opcao == 2) {
+      resultado = num1 - num2
+      escreva("\nResultado: ", resultado)
+    }
+    senao se (opcao == 3) {
+      resultado = num1 * num2
+      escreva("\nResultado: ", resultado)
+    }
+    senao se (opcao == 4) {
+      se (num2 != 0) {
+        resultado = num1 / num2
+        escreva("\nResultado: ", resultado)
+      }
+      senao {
+        escreva("\nErro: divisao por zero!")
+      }
+    }
+    senao {
+      escreva("\nOpcao invalida!")
+    }
+
   }
 }
